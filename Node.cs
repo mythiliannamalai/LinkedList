@@ -16,4 +16,5 @@ namespace Datastructure
             next = null;
         }
     }
+ 
 }

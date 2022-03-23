@@ -28,6 +28,12 @@ namespace Datastructure
                 Head = node;
             }
         }
+        public void AddNodeFront(Node newNode)
+        {
+            newNode.next = Head;
+            Head= newNode;
+
+        }     
         public void display()
         {
             Node temp = Head;
@@ -49,6 +55,7 @@ namespace Datastructure
                     temp = temp.next;
                 }
             }
+            
         }
     }
 }
