@@ -43,6 +43,16 @@ namespace Datastructure
             newNode1.next = Head;
             Head = newNode1;
         }
+        public void DeleteNodeatFirst()
+        {
+            if (this.Head == null)
+            {
+                Console.WriteLine("Nothing to delete list is empty");
+            }
+            Node temp = this.Head;
+            this.Head = this.Head.next;
+            Console.WriteLine("Removed from linkedlist" + temp.data);
+        }
         public void display()
         {
             Node temp = Head;

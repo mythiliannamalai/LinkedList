@@ -25,7 +25,10 @@ namespace Datastructure
             linkedList.display();
             Node newnode1=new Node(41);
             linkedList.AddNodeFrontSide(newnode1);
-            linkedList.display();          
+            linkedList.display();
+            Console.WriteLine("Delete the first node");
+            linkedList.DeleteNodeatFirst();
+            linkedList.display();
         }
     }
 }
