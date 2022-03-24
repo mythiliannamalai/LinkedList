@@ -31,9 +31,14 @@ namespace Datastructure
         public void AddNodeFront(Node newNode)
         {
             newNode.next = Head;
-            Head= newNode;
+            Head = newNode;
 
-        }     
+        }
+        public void AddNodeEnd(Node endNode)
+        {
+            endNode.next = Tail;
+            Tail = endNode;
+        }
         public void display()
         {
             Node temp = Head;
@@ -54,9 +59,16 @@ namespace Datastructure
 
                     temp = temp.next;
                 }
+                Node temp2 = Tail;
+                if(temp2 != null)
+                {
+                    Console.Write("->");
+                    Console.Write(temp2.data);
+                    temp2 = temp2.next;
+                }
+
             }
-            
+
         }
     }
 }
-
