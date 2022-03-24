@@ -32,12 +32,16 @@ namespace Datastructure
         {
             newNode.next = Head;
             Head = newNode;
-
         }
         public void AddNodeEnd(Node endNode)
         {
             endNode.next = Tail;
             Tail = endNode;
+        }
+        public void AddNodeFrontSide(Node newNode1)
+        {
+            newNode1.next = Head;
+            Head = newNode1;
         }
         public void display()
         {
@@ -56,19 +60,19 @@ namespace Datastructure
                     {
                         Console.Write("->");
                     }
-
-                    temp = temp.next;
+                    temp = temp.next;                                  
                 }
                 Node temp2 = Tail;
-                if(temp2 != null)
+                while (temp2 != null)
                 {
-                    Console.Write("->");
-                    Console.Write(temp2.data);
-                    temp2 = temp2.next;
+                    if (temp2 != null)
+                    {
+                        Console.Write("->");
+                        Console.Write(temp2.data);
+                        temp2 = temp2.next;
+                    }
                 }
-
             }
-
         }
     }
 }
