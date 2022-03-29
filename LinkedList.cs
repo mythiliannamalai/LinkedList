@@ -80,6 +80,7 @@ namespace Datastructure
             Head.next= node2;
             node2 = node2.next;
         }
+       
         public void display()
         {
             Node temp = Head;
@@ -98,7 +99,28 @@ namespace Datastructure
                     }
                     temp = temp.next;
                 }
-            }           
+            }          
         }
+        public void Stackdisplay()
+        {
+            Node temp = Head;
+            if (temp == null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    Console.Write(temp.data);
+                    if (temp.next != null)
+                    {
+                        Console.Write("->");
+                    }
+                    temp = temp.next;
+                }
+            }
+        }
+
     }
 }

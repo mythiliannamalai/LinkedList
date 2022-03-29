@@ -42,6 +42,13 @@ namespace Datastructure
             Console.WriteLine("\nDelete in between number");
             linkedList.DeleteBetweenNode(node2);
             linkedList.display();
+            Stack stack = new Stack();
+            stack.push(node1);
+            stack.push(node2);
+            stack.push(node3);
+            stack.displayStack();
+            stack.Top();
+            stack.displayStack();
         }
     }
 }
