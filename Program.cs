@@ -20,6 +20,10 @@ namespace Datastructure
             Node node5 = new Node(40);
             linkedList.AddNodeFrontSide(node5);
             linkedList.display();
+            Console.WriteLine("\nAdding spacified number");
+            Node node6=new Node(80);
+            linkedList.AddingSpacifiedNode(node3,node6);
+            linkedList.display();
         }
     }
 }

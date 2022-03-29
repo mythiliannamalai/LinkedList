@@ -40,6 +40,11 @@ namespace Datastructure
             node5.next = Head;
             Head = node5;
         }
+        public void AddingSpacifiedNode(Node node3,Node node6)
+        {
+            Head.next = node6;
+            node6.next = node3;
+        }
         public void display()
         {
             Node temp = Head;
