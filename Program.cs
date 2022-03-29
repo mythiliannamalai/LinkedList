@@ -13,10 +13,13 @@ namespace Datastructure
             linkedList.AddNode(node2);
             linkedList.AddNode(node3);
             linkedList.display();
-            Node node4=new Node(30);
+            Node node4=new Node(50);
             linkedList.addNodeEnd(node4);
             linkedList.display();
-
+            Console.WriteLine("\nAdding node at starting");
+            Node node5 = new Node(40);
+            linkedList.AddNodeFrontSide(node5);
+            linkedList.display();
         }
     }
 }

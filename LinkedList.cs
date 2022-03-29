@@ -35,6 +35,11 @@ namespace Datastructure
             Node temp2 = Tail;
             temp2 = temp2.next;
         }
+        public void AddNodeFrontSide(Node node5)
+        {
+            node5.next = Head;
+            Head = node5;
+        }
         public void display()
         {
             Node temp = Head;
