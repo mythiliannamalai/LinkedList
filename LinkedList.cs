@@ -61,7 +61,21 @@ namespace Datastructure
             Tail.next = null;
             Console.WriteLine("\nRemoved from linkedlist");
         }
-            public void display()
+        public bool search(int data)
+        {
+           
+            Node temp = this.Head;
+            while (temp != null)
+            {
+                if (temp.data == data)
+                {
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+        }
+        public void display()
         {
             Node temp = Head;
             if (temp == null)

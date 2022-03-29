@@ -28,6 +28,18 @@ namespace Datastructure
             linkedList.display();
             linkedList.DeleteNodeatEnd(node1);
             linkedList.display();
+            Console.WriteLine("\nEnter the number want to search");
+            int data = int.Parse(Console.ReadLine());
+            bool res = linkedList.search(data);
+            if (res == true)
+            {
+                Console.WriteLine("data is found");
+            }
+            else
+            {
+                Console.WriteLine("data is not found");
+            }
+
         }
     }
 }
