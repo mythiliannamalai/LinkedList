@@ -39,7 +39,9 @@ namespace Datastructure
             {
                 Console.WriteLine("data is not found");
             }
-
+            Console.WriteLine("\nDelete in between number");
+            linkedList.DeleteBetweenNode(node2);
+            linkedList.display();
         }
     }
 }

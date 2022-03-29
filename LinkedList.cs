@@ -75,6 +75,11 @@ namespace Datastructure
             }
             return false;
         }
+        public void DeleteBetweenNode(Node node2)
+        {
+            Head.next= node2;
+            node2 = node2.next;
+        }
         public void display()
         {
             Node temp = Head;
