@@ -54,7 +54,12 @@ namespace Datastructure
             Node temp = this.Head;
             this.Head = this.Head.next;
             Console.WriteLine("\nRemoved from linkedlist");
-
+        }
+        public void DeleteNodeatEnd(Node node1)
+        {
+            node1.next = Tail;
+            Tail.next = null;
+            Console.WriteLine("\nRemoved from linkedlist");
         }
             public void display()
         {

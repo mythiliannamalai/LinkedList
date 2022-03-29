@@ -26,6 +26,8 @@ namespace Datastructure
             linkedList.display();
             linkedList.DeleteNodeatFirst();
             linkedList.display();
+            linkedList.DeleteNodeatEnd(node1);
+            linkedList.display();
         }
     }
 }
