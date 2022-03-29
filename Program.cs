@@ -13,12 +13,9 @@ namespace Datastructure
             linkedList.AddNode(node2);
             linkedList.AddNode(node3);
             linkedList.display();
-
-            
-
-
-
-
+            Node node4=new Node(30);
+            linkedList.addNodeEnd(node4);
+            linkedList.display();
 
         }
     }

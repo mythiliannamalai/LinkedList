@@ -27,7 +27,14 @@ namespace Datastructure
                 node.next = Head;
                 Head = node;              
             }
-        }               
+        }
+        public void addNodeEnd(Node node4)
+        {
+            Console.WriteLine("\n Add element at end");
+            Tail.next = node4;
+            Node temp2 = Tail;
+            temp2 = temp2.next;
+        }
         public void display()
         {
             Node temp = Head;
@@ -46,8 +53,7 @@ namespace Datastructure
                     }
                     temp = temp.next;
                 }
-            }
-            
+            }           
         }
     }
 }
