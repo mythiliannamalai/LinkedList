@@ -24,6 +24,8 @@ namespace Datastructure
             Node node6=new Node(80);
             linkedList.AddingSpacifiedNode(node3,node6);
             linkedList.display();
+            linkedList.DeleteNodeatFirst();
+            linkedList.display();
         }
     }
 }
